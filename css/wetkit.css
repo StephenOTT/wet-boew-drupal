@@ -1,25 +1,22 @@
-/**
- * Stylesheet for WetKit Profile
- */
+/** Stylesheet for WetKit Profile */
+/* Installation Screen */
+#wetkit-theme-selection-form .form-item-theme { clear: both; margin-top: .5em; margin-bottom: .5em; }
+#wetkit-theme-selection-form .form-item-theme label img { float: left; width: 100px; margin-right: 1em; }
 
-#wetkit-theme-form .form-item-theme {
-  clear: both;
-  margin-top: .5em;
-  margin-bottom: .5em;
-}
+.in-maintenance input[type="image"] + label, .in-maintenance input[type="checkbox"] + label, .in-maintenance input[type="radio"] + label { display: inline; }
 
-#wetkit-theme-form .form-item-theme label img {
-  float: left;
-  width: 100px;
-  margin-right: 1em;
-}
+.in-maintenance #edit-theme img { display: block; width: 275px; }
+.in-maintenance .messages { padding: 10px 10px 10px 10px; }
 
-#wetkit-apps-check #edit-pantheon img {
-  float: right;
-  margin-left: 1em;
-  margin-bottom: 1em;
-}
+/* Global Fixes */
+.krumo-footnote img { width: auto !important; }
 
-#admin-menu .dropdown li li.expandable ul {
-  margin: -22px 0 0 160px !important;
-}
+/* Media Browser */
+body.page-media-browser { min-width: auto; }
+
+.media-list-thumbnails li a { width: 100px; height: 100px; }
+.media-list-thumbnails .media-item { height: 100px; }
+.media-list-thumbnails .media-item img { width: auto; max-width: 90px; max-height: 90px; }
+.media-list-thumbnails .media-item .label-wrapper label { white-space: normal; word-wrap: break-word; line-height: 0; }
+
+.media-display-thumbnails .media-list-thumbnails .form-type-checkbox { bottom: 25px; left: 8px; width: 10px; border: none; }

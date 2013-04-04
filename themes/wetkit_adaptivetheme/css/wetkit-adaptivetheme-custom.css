@@ -1,79 +1,164 @@
-/*
-Document   : wetkit.scss
-Created on : Apr 28, 2012, 9:14:37 PM
-Author     : sylus1984
-Description:
-Purpose of the stylesheet follows.
-*/
-/*
-TODO customize this sample style
-Syntax recommendation http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html
-*/
-/* Custom Style Overrides */
-#wb-head, #wb-head-in, #gcwu-bnr, #gcwu-bnr-in { overflow: visible !important; }
+/* Drupal Core */
+.field-label-inline .field-label { margin: 0; }
 
-#gcwu-bnr { z-index: 99 !important; }
+#wb-main-in fieldset { border: 1px solid #ccc; padding: 2em 0 0 0; /* LTR */ position: relative; margin: 1em 0; }
+#wb-main-in fieldset.collapsed { background-color: transparent; border-width: 1px !important; }
+#wb-main-in fieldset .fieldset-legend { margin-top: 0.5em; padding-left: 15px; /* LTR */ position: absolute; text-transform: uppercase; }
+#wb-main-in fieldset .fieldset-wrapper { padding: 0 13px 13px 15px; /* LTR */ }
+#wb-main-in fieldset legend { height: 0px; }
+#wb-main-in fieldset fieldset { background-color: #fff; }
+#wb-main-in fieldset fieldset fieldset { background-color: #f8f8f8; }
 
-#gcwu-psnb .wet-boew-megamenu { z-index: 98 !important; }
-#gcwu-psnb .mb-menu { z-index: 98 !important; }
+html.js .page-node-add fieldset.collapsed, html.js .page-node-edit fieldset.collapsed { border-width: 1px; height: auto; }
 
-#gcwu-connect .boxes-box-controls .cancel { display: none; }
+.panels-ipe-editing #wb-sec-in { margin-top: 0px; }
 
-/* Custom Search Bar Overrides */
-.search-form .form-item-custom-search-blocks-form-1 { display: inline; }
-.search-form #edit-actions { display: inline; }
-.search-form .form-actions { display: inline; }
+.contextual-links-wrapper { z-index: 10; }
 
-fieldset.custom_search-popup { z-index: 99 !important; width: 199px; background-color: white; }
-fieldset.custom_search-popup a { color: black !important; }
-fieldset.custom_search-popup label { position: relative !important; }
-fieldset.custom_search-popup .form-item { text-align: left; }
+figure { display: block; margin: 0px; padding: 0px; }
 
-/* Drupal Tabs Overrides */
-ul.tabs { margin-left: 10px; margin-right: 10px; }
+.node { margin-bottom: 0px; }
 
 .profile dl { margin-left: 10px; margin-right: 10px; }
 
-/* Contextual Links */
-div.contextual-links-wrapper { z-index: 10; }
+ul.tabs { margin-left: 10px; margin-right: 10px; margin-bottom: 10px; }
 
-/* Intranet Overrides */
-#gcwu-bnr-in #gcwu-title { margin-top: 0px; padding-top: 7px; }
+#status-messages { margin-top: 10px; }
 
-/* Maintenance Page */
-.maintenance-page #main-content #content { padding: 10px; }
+.form-item label.option { display: inline; }
 
-/* Adaptive Theme Overrides */
+/* Drupal Contrib: Diff */
+.page-node-revisions #block-system-main .diff-section-title, .page-node-moderation #block-system-main .diff-section-title { margin: 0px 10px; font-size: 12px; padding: 5px; background-color: #eee; border: 1px solid #d4d4d4; }
+.page-node-revisions #block-system-main table.diff, .page-node-moderation #block-system-main table.diff { width: auto; table-layout: auto; }
+.page-node-revisions #block-system-main table.diff-revisions, .page-node-moderation #block-system-main table.diff-revisions { margin: 0px; }
+.page-node-revisions #block-system-main table.diff-revisions .error, .page-node-moderation #block-system-main table.diff-revisions .error { color: #000; }
+.page-node-revisions #block-system-main table.diff-revisions .diff-revision td.revision-current, .page-node-moderation #block-system-main table.diff-revisions .diff-revision td.revision-current { background: #aaffaa; }
+
+/* Drupal Contrib: Workbench */
+#block-workbench-block .workbench-info-block { margin: 0px 10px 10px 10px; background-color: #FFFFCE!important; color: #000; font-weight: 600; }
+
+/* Drupal Contrib: Adaptive Theme */
 #breadcrumb, .breadcrumb-wrapper { margin-left: 0px; margin-right: 0px; }
 
 .container { max-width: none !important; }
 
-.node { margin-bottom: 0px; }
+.field-name-field-featured-image-form .image-preview { float: none; }
 
-figure { display: block; margin: 0px; padding: 0px; }
+#node-edit .image-widget .form-submit, #node-edit .file-widget .form-submit { display: inline; }
 
-.wb-sec-def h3, .wb-sec-def h4, .wb-sec-def .top-level { font-weight: 700; background: #DDD; padding: 2px 4px; }
+#node-edit .form-actions input { display: inline; }
 
-.wb-sec-def h3, .wb-sec-def h4, .wb-sec-def .top-level { font-weight: 700; background: #DDD; padding: 2px 4px; }
+.maintenance-page #main-content #content { padding: 10px; }
 
 #main-content #tasks ul.tabs { margin-bottom: 20px; }
 
-.panels-ipe-editing #wb-sec-in { margin: 0px; }
+/* Drupal Contrib: Custom Search */
+fieldset.custom_search-popup { z-index: 99 !important; width: 198px; background-color: white; padding: 0px 10px; border: 1px solid #DDD; }
+fieldset.custom_search-popup a { color: black !important; }
+fieldset.custom_search-popup label { position: relative !important; }
+fieldset.custom_search-popup .form-item { text-align: left; }
+
+.search-form #edit-actions { display: inline; }
+.search-form .form-actions { display: inline; }
+.search-form .form-item-custom-search-blocks-form-1 { display: inline; }
+
+/* Drupal Contrib: Panels */
+.panels-ipe-editing .region-pearson-first { margin-right: 10px; }
+
+.panels-ipe-editing .region-pearson-second { margin-right: 10px; }
+
+#panels-ipe-control-container input, #panels-ipe-control-container a { color: white; }
+
+.panel-pane .block-content .node-unpublished { margin-left: 10px; margin-right: 10px; margin-bottom: 10px; }
 
 .panels-ipe-placeholder h3 { background: none; padding: 0px; }
 
-.region-wetkit-33-66-second { width: 95%; }
+.panels-ipe-newblock li { list-style: none; float: left; }
 
-.pane-page-tabs #tabs { margin-bottom: 20px; }
+div.panels-ipe-placeholder h4 { font-weight: 700; font-size: 15px; width: 75px; /* In order to prevent the region title from running into the button, set a width. Initital width only--this will be changed by jQuery */ margin: 1.154em 0; line-height: 150%; }
 
-.page-node-edit .pane-page-tabs #tabs { margin: 20px 0px 0px 0px; }
+.page-node-edit .pane-page-tabs #tabs { margin: 0px 0px 0px 0px; }
+
+.block-content .tabs li a, #tasks .tabs li a { top: 0px; margin-top: 0px; }
 
 .page-node-edit .pane-page-tabs ul.tabs { margin: 0px 0px; }
-
-.page-node-add div.vertical-tabs, .page-node-edit div.vertical-tabs { margin-top: 3em; }
-
-#block-workbench-block { width: 99%; display: block; margin-left: auto; margin-right: auto; }
 
 .page-node-add label[for="edit-language"], .page-node-edit label[for="edit-language"] { display: inline; }
 
 .page-node-add .node-form h3.pane-title, .page-node-edit .node-form h3.pane-title { background: #DDD; padding: 2px 4px; }
+
+.region-wetkit-33-66-second { width: 95%; }
+
+/* WET-BOEW */
+section#main-content { display: block !important; }
+
+#gcwu-connect h2 { border: none; margin-bottom: 5px; color: #333; float: left; margin-top: 2px; margin-right: 10px; }
+
+#gcwu-connect ul { list-style-type: none; }
+
+#gcwu-connect li { display: -moz-inline-stack; display: inline-block; vertical-align: middle; }
+
+#gcwu-connect a { background: none; padding-right: 0; text-decoration: none; }
+
+.gcwu-minister-in { min-height: 149px; }
+
+.gcwu-minister { margin-top: 10px; }
+
+.gcwu-minister img { padding-right: 5px; float: left; margin: 0; }
+
+.gcwu-minister p { margin: 0; padding: 10px 5px 10px 0; }
+
+.gcwu-minister p strong { font-weight: 700; color: #001D45; }
+
+.gcwu-minister ul { list-style-type: none; padding-top: 17px; margin: 0; }
+
+.gcwu-minister ul:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+.gcwu-minister li { padding-bottom: 8px; }
+
+.gcwu-minister li a:hover, .gcwu-minister li a:focus, .gcwu-minister li a:active { text-decoration: none; }
+
+div#gcwu-headlines ul, div#gcwu-headlines ul li { list-style: none!important; margin: 0!important; }
+
+#wb-aside #gcwu-priorities h2 { color: #333; font-weight: 400; border: 0; margin-bottom: 5px; font-size: 1.6em; }
+
+#wb-main-in #gcwu-connect { margin-left: 0px; }
+#wb-main-in #gcwu-connect h2 { font-weight: 400; font-size: 1.6em; margin-top: 6px; }
+
+.wb-sec-def .panel-pane .wet-menu-block { margin-bottom: 10px; }
+
+#gcwu-bnr { z-index: 99 !important; }
+
+#gcwu-bnr-in #gcwu-title { margin-top: 0px; padding-top: 7px; margin-bottom: 0px; }
+
+.pane-node-updated #gcwu-date-mod { position: relative; float: right; }
+
+#gcwu-psnb .wet-boew-megamenu { z-index: 98 !important; }
+#gcwu-psnb .mb-menu { z-index: 98 !important; }
+
+#gcwu-srchbx-in { display: inline; }
+
+#gcwu-srchbx label { height: auto !important; width: auto !important; overflow: visible !important; }
+
+#gcwu-connect .boxes-box-controls .cancel { display: none; }
+
+.gcwu-minister-in { background-color: #EEE; }
+
+.gcwu-minister p { background-color: #FFF; }
+
+#wb-head, #wb-head-in, #gcwu-bnr, #gcwu-bnr-in { overflow: visible !important; }
+
+#wb-aside { display: inline; margin-left: 10px; margin-right: 10px; }
+#wb-aside ul { list-style: none; margin: 0; padding: 0; }
+#wb-aside ul li { margin: 0; padding: 0; }
+#wb-aside img { margin-left: 0; margin-right: 0; }
+#wb-aside .gcwu-minister-img img { width: auto !important; height: auto; }
+
+/* Open Layers */
+/* Override max-width 100% for map displays */
+.gmap img, .view-gmap img, .openlayers-map img, #getlocations_map_canvas img { max-width: none; }
+
+/* Migration Helper Classes */
+.node-type-wetkit-documentation .block-content #tabs { margin-bottom: 10px; }
+
+#gcwu-sft li a[href^="mailto:"] { background-image: none; padding-left: 0px; }

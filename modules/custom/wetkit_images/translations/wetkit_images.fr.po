@@ -1,0 +1,29 @@
+# French translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from file: wetkit_images.info: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2013-02-09 20:34-0500\n"
+"PO-Revision-Date: 2013-02-09 20:34-0500\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: French <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: wetkit_images.info:0
+msgid "WetKit Images"
+msgstr "Images BOEW"
+
+#: wetkit_images.info:0
+msgid "Provides scaling and cropping to images."
+msgstr "Effectue la mise à l’échelle et le recadrage des images."
+
+#: wetkit_images.info:0
+msgid "WetKit"
+msgstr "BOEW"
+
