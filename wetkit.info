@@ -1,9 +1,10 @@
 name = Web Experience Toolkit
+distribution_name = WetKit
 description = Install Profile created for the Web Experience Toolkit using Drupal 7
-version = 7.x-1.0
 core = 7.x
+exclusive = 1
 
-; Core
+; Drupal Core
 dependencies[] = menu
 dependencies[] = image
 dependencies[] = list
@@ -16,116 +17,68 @@ dependencies[] = search
 dependencies[] = field
 dependencies[] = field_ui
 dependencies[] = file
-dependencies[] = help
 dependencies[] = block
 dependencies[] = dblog
 dependencies[] = update
 dependencies[] = shortcut
-dependencies[] = toolbar
 
-; Core Disabled
+; Drupal Core Disabled
+;dependencies[] = help
 ;dependencies[] = overlay
 ;dependencies[] = contextual
 ;dependencies[] = rdf
 ;dependencies[] = statistics
 ;dependencies[] = simpletest
 
-; Foundation
-dependencies[] = boxes
-;dependencies[] = browscap
-dependencies[] = context
-dependencies[] = context_ui
-dependencies[] = ctools
-dependencies[] = page_manager
-dependencies[] = diff
-dependencies[] = ds
-dependencies[] = ds_extras
-dependencies[] = ds_forms
-dependencies[] = fences
-dependencies[] = fieldable_panels_panes
-dependencies[] = jquery_update
-dependencies[] = libraries
-dependencies[] = panels
-dependencies[] = panels_ipe
-dependencies[] = panels_breadcrumbs
-dependencies[] = panelizer
-dependencies[] = password_policy
-dependencies[] = pm_existing_pages
-dependencies[] = token
-dependencies[] = views
-dependencies[] = views_content
-dependencies[] = views_ui
+; Panopoly Foundation
+dependencies[] = panopoly_core
+dependencies[] = panopoly_images
+dependencies[] = panopoly_theme
+dependencies[] = panopoly_magic
+dependencies[] = panopoly_widgets
+dependencies[] = panopoly_admin
+dependencies[] = panopoly_users
 
-; Field UI and Content Types
-dependencies[] = date
-dependencies[] = date_api
-dependencies[] = date_popup
-dependencies[] = date_views
-dependencies[] = file_entity
-dependencies[] = field_group
-dependencies[] = link
-dependencies[] = tablefield
+; Panopoly Recommended - Disabled
+;dependencies[] = devel
+;dependencies[] = navbar
+;dependencies[] = save_draft
+;dependencies[] = simplified_menu_admin
 
-; Menus and URLS
-dependencies[] = pathauto
-dependencies[] = menu_block
-;dependencies[] = menu_views
-
-; User Experience
-;dependencies[] = admin
-dependencies[] = admin_menu
-dependencies[] = admin_menu_toolbar
+; Panopoly Recommended - Admin
 dependencies[] = backports
-dependencies[] = better_formats
-dependencies[] = caption_filter
 dependencies[] = date_popup_authored
-dependencies[] = image_resize_filter
-dependencies[] = linkchecker
-dependencies[] = media
-dependencies[] = media_internet
-dependencies[] = mediafield
 dependencies[] = module_filter
 dependencies[] = workbench
 dependencies[] = workbench_moderation
-dependencies[] = wysiwyg
-dependencies[] = wysiwyg_filter
-dependencies[] = references_dialog
-dependencies[] = views_bulk_operations
-dependencies[] = views_autocomplete_filters
-
-; Apps
-dependencies[] = apps
-dependencies[] = defaultcontent
-dependencies[] = entity
-dependencies[] = features
-dependencies[] = strongarm
 dependencies[] = uuid
-dependencies[] = variable
 
-; Language
-dependencies[] = i18n
-dependencies[] = i18n_block
-dependencies[] = i18n_contact
-dependencies[] = i18n_field
-dependencies[] = i18n_menu
-dependencies[] = i18n_node
-dependencies[] = i18n_path
-dependencies[] = i18n_redirect
-dependencies[] = i18n_string
-dependencies[] = i18n_sync
-dependencies[] = i18n_taxonomy
-dependencies[] = i18n_translation
-dependencies[] = i18n_variable
-dependencies[] = stringoverrides
+; WetKit Toolset
+dependencies[] = wetkit_images
+dependencies[] = wetkit_widgets
+dependencies[] = wetkit_pages
+dependencies[] = wetkit_layouts
+dependencies[] = wetkit_search
+dependencies[] = wetkit_wysiwyg
+dependencies[] = wetkit_demo
+dependencies[] = wetkit_language
+dependencies[] = wetkit_migrate
+dependencies[] = wetkit_bean
+dependencies[] = wetkit_metatag
+dependencies[] = wetkit_core
+dependencies[] = wetkit_menu
+dependencies[] = wetkit_wetboew
+dependencies[] = wetkit_breadcrumbs
 
-; Search
-;dependencies[] = facetapi
-dependencies[] = metatag
-dependencies[] = search404
+; WetKit Testing
+files[] = wetkit.test
+files[] = tests/simpletest/WetKitWebTestCase.inc
 
 ; CSS Stylesheets
 stylesheets[all][] = css/wetkit.css
 
-; Files
-files[] = wetkit.install
-files[] = wetkit.profile
+; Settings
+variables[password_policy_show_restrictions] = 1
+variables[password_policy_new_login_change] = 0
+variables[password_policy_warning_subject] = "Password expiration warning at !site"
+variables[password_policy_warning_body] = "Your password at !site will expire in less than !days_left day(s).

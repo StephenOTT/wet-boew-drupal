@@ -1,9 +1,0 @@
-name = WetKit Images
-description = Integrates WetKit image into WetKit.
-machine_name = wetkit_images
-version = 1.0-beta3
-downloadable = wetkit_images 7.x-1.0-beta3
-author = Pantheon Systems
-author_url = http://www.getpantheon.com
-screenshots[] = wetkit_search_screen_1.png
-logo = wetkit-icon.png
